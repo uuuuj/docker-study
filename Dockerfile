@@ -10,7 +10,7 @@ RUN apt update && apt install -y \
 # Python 3.12 설치 (deadsnakes PPA 사용)
 RUN add-apt-repository ppa:deadsnakes/ppa -y && \
     apt update && \
-    apt install -y python3.12 python3.12-venv python3.12-distutils && \
+    apt install -y python3.12 python3.12-full && \
     ln -s /usr/bin/python3.12 /usr/local/bin/python3 && \
     curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 
