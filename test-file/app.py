@@ -11,4 +11,4 @@ def home():
     return jsonify({'message': 'Hello! This is a simple Flask API. Use /ping to test.'})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=8501)
